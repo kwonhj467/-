@@ -1,5 +1,5 @@
 package com.example.suwontravelapp
-
+//임포트
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.suwontravelapp.databinding.ActivityPopularityBinding
