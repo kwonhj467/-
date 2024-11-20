@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity">
+
+            <!-- 타이틀 텍스트 -->
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수수한 여행"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp" />
+
+            <!-- 로그인 버튼 -->
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="로그인"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- 데이트 코스 버튼 -->
+            <LinearLayout
+                android:id="@+id/date_course_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/category_border"
+                app:layout_constraintTop_toBottomOf="@id/title_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="16dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/date_course_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/date_course"
+                    android:contentDescription="데이트코스 이미지" />
+
+                <Button
+                    android:id="@+id/dateCourseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="데이트코스"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- 야경 버튼 -->
+            <LinearLayout
+                android:id="@+id/night_view_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/category_border"
+                app:layout_constraintTop_toBottomOf="@id/date_course_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="16dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/night_view_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/nightview"
+                    android:contentDescription="야경 이미지" />
+
+                <Button
+                    android:id="@+id/nightViewButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="야경"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- 유적지 버튼 -->
+            <LinearLayout
+                android:id="@+id/historic_site_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/category_border"
+                app:layout_constraintTop_toBottomOf="@id/night_view_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="16dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/historic_site_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/historic_place"
+                    android:contentDescription="유적지 이미지" />
+
+                <Button
+                    android:id="@+id/historicSiteButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="유적지"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- 액티비티 버튼 -->
+            <LinearLayout
+                android:id="@+id/activity_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/category_border"
+                app:layout_constraintTop_toBottomOf="@id/historic_site_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="16dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/activity_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/activity"
+                    android:contentDescription="액티비티 이미지" />
+
+                <Button
+                    android:id="@+id/activityButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="액티비티"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- 인기순위 버튼 -->
+            <LinearLayout
+                android:id="@+id/popularity_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/category_border"
+                app:layout_constraintTop_toBottomOf="@id/activity_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="16dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/popularity_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/popularity"
+                    android:contentDescription="인기순위 이미지" />
+
+                <Button
+                    android:id="@+id/popularityButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인기순위"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- 지도 보기 버튼 -->
+            <LinearLayout
+                android:id="@+id/map_view_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/category_border"
+                app:layout_constraintTop_toBottomOf="@id/popularity_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="16dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/map_view_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/map_view"
+                    android:contentDescription="지도 이미지" />
+
+                <Button
+                    android:id="@+id/mapViewButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="지도"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>
