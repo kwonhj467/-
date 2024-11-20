@@ -21,12 +21,11 @@ class MapViewActivity : AppCompatActivity() {
         webSettings.javaScriptEnabled = true // JavaScript 활성화
         webSettings.domStorageEnabled = true // DOM Storage 활성화
 
-        // iframe HTML 로드
+        // iframe HTML 로드, 웹 스크래핑
         val iframeHtml = """
             <html>
                 <body style='margin:0;padding:0;'>
-                    <iframe src='https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d101219.61518875544!2d126.9894764!3d37.552402000000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x357c98dcaddfa8ff%3A0x5cba1f83032e6da1!2z7ISc7Jq47Yq567OE7IucIO2ZjeuMgOyeheq1rOyXreyVng!3m2!1d37.5551463!2d126.9215309!4m5!1s0x357ca3a4c23b83eb%3A0xa27a76b786341663!2z7ISc7Jq47Yq567OE7IucIOyEseuPmeq1rCDsmZXsi63rpqzroZwgODMtMjEg65SU666k7KeA7JeE!3m2!1d37.5438189!2d127.0441812!5e0!3m2!1sko!2skr!4v1731928757623!5m2!1sko!2skr'
-                    width='100%' height='100%' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101644.22116080999!2d126.95118442314568!3d37.23864527385618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b4335c2fbe363%3A0x52ac10a4de5dcd4b!2z6rK96riw64-EIOyImOybkOyLnCDtjJTri6zqtawg7ZaJ6raB64-Z!5e0!3m2!1sko!2skr!4v1732093734282!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </body>
             </html>
         """.trimIndent()

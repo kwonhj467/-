@@ -12,6 +12,7 @@ class DateCourseActivity : AppCompatActivity() {
         binding = ActivityDateCourseBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.categoryTitle.text = "데이트코스"
+        // XML 파일에 정의된 TextView의 ID를 올바르게 참조합니다.
+        binding.titleText.text = "데이트코스"
     }
 }
