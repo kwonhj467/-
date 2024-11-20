@@ -1,5 +1,5 @@
 package com.example.suwontravelapp
-
+// 시발
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
