@@ -63,15 +63,25 @@
 
                     <Button
                         android:id="@+id/favorite_button_hwasung"
-                        android:layout_width="wrap_content"
+                        android:layout_width="346dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:backgroundTint="#FF4081"
                         android:text="즐겨찾기 추가"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/map_button_hwasung7"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="지도 보기"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
                 </LinearLayout>
 
+                <!-- 정지영 커피 로스터리 프레임 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -81,8 +91,8 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="614dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
                         android:layout_weight="1"
                         android:scaleType="centerCrop"
                         android:src="@drawable/jy_coffee_roastery" />
@@ -105,14 +115,339 @@
 
                     <Button
                         android:id="@+id/favorite_button_jy_coffee_roastery"
-                        android:layout_width="wrap_content"
+                        android:layout_width="346dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:backgroundTint="#FF4081"
                         android:text="즐겨찾기 추가"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/map_button_hwasung6"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="지도 보기"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
                 </LinearLayout>
+
+                <!-- 행궁동 벽화 마을 프레임 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/category_border"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/haenggung_mural_village" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="행궁동 벽화 마을"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다양한 벽화와 예술작품으로 가득한 매력적인 골목길입니다."
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/favorite_button_haenggung_mural"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="즐겨찾기 추가"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/map_button_hwasung5"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="지도 보기"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- 행리단길 프레임 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/category_border"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/haengnidan_gil" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="행리단길"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다양한 맛집과 카페가 있는 인기 있는 거리입니다."
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/favorite_button_haengnidan_gil"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="즐겨찾기 추가"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/map_button_hwasung4"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="지도 보기"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- 화성 행궁 프레임 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/category_border"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hwaseong_palace" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="화성 행궁"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="조선 왕조의 중요한 궁궐 중 하나로, 역사적인 가치가 높은 장소입니다."
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/favorite_button_hwaseong_palace"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="즐겨찾기 추가"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/map_button_hwasung3"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="지도 보기"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- 지동 시장 프레임 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/category_border"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jidong_market" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="지동 시장"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다양한 먹거리와 즐길거리가 가득한 전통 시장입니다."
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/favorite_button_jidong_market"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="즐겨찾기 추가"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/map_button_hwasung2"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="지도 보기"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- 광교 호수 공원 프레임 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/category_border"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gwanggyo_lake_park" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="광교 호수 공원"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="산책과 피크닉을 즐길 수 있는 아름다운 호수 공원입니다."
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/favorite_button_gwanggyo_lake_park"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="즐겨찾기 추가"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/map_button_hwasung1"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="지도 보기"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- 방화수류정 프레임 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/category_border"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banghwasuryujeong" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="방화수류정"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아름다운 자연 경관과 함께 할 수 있는 고풍스러운 누정입니다."
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/favorite_button_banghwasuryujeong"
+                        android:layout_width="353dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="즐겨찾기 추가"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/map_button_hwasung"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="지도 보기"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
             </LinearLayout>
         </ScrollView>
 
