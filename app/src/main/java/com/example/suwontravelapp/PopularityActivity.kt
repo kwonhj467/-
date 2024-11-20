@@ -3,7 +3,7 @@ package com.example.suwontravelapp
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.suwontravelapp.databinding.ActivityPopularityBinding
-
+// 오민성
 class PopularityActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPopularityBinding
 
