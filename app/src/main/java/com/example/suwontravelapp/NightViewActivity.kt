@@ -12,6 +12,6 @@ class NightViewActivity : AppCompatActivity() {
         binding = ActivityNightViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.categoryTitle.text = "야경"
+        binding.titleText.text = "야경"
     }
 }
