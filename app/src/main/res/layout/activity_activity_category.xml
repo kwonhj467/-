@@ -1,24 +1,245 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:background="#F5F5F5">
 
-        <TextView
-            android:id="@+id/categoryTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="카테고리"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
 
-        <!-- 추가적인 내용 -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="액티비티에 대한 설명을 여기에 표시합니다." />
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/categoryTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="액티비티"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_horizontal" />
+                <!-- 더 판타지움 프레임 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/category_border"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/the_fantasyum" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="더 판타지움"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="환상적인 체험을 즐길 수 있는 테마파크입니다."
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/favorite_button_the_fantasyum"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="즐겨찾기 추가"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/map_button_the_fantasyum"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="지도 보기"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- 플라잉 수원 프레임 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/category_border"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/flying_suwon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="플라잉 수원"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="열기구를 타고 수원의 경치를 감상할 수 있는 곳입니다."
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/favorite_button_flying_suwon"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="즐겨찾기 추가"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/map_button_flying_suwon"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="지도 보기"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- 수원 KT위즈파크 야구장 프레임 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/category_border"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ktwiz_park" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="수원 KT위즈파크 야구장"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KT 위즈의 홈구장으로, 야구 경기를 즐길 수 있는 곳입니다."
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/favorite_button_ktwiz_park"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="즐겨찾기 추가"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/map_button_ktwiz_park"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="지도 보기"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <!-- 그래비티 클라이밍 프레임 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/category_border"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gravity_climbing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="그래비티 클라이밍"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다양한 난이도의 클라이밍을 즐길 수 있는 실내 암벽장입니다."
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/favorite_button_gravity_climbing"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="즐겨찾기 추가"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/map_button_gravity_climbing"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF4081"
+                        android:text="지도 보기"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>

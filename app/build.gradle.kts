@@ -10,7 +10,9 @@ android {
     compileSdk = 35
 
     buildFeatures {
-        dataBinding = true  // Kotlin DSL 문법에 맞게 '=' 사용
+        dataBinding = true
+
+
     }
 
     defaultConfig {

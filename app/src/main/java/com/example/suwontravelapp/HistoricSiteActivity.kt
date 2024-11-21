@@ -12,6 +12,6 @@ class HistoricSiteActivity : AppCompatActivity() {
         binding = ActivityHistoricSiteBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.categoryTitle.text = "유적지"
+        binding.historicTitle.text = "유적지"
     }
 }
