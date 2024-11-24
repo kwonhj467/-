@@ -11,8 +11,6 @@ android {
 
     buildFeatures {
         dataBinding = true
-
-
     }
 
     defaultConfig {
@@ -51,6 +49,10 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    // Gson 라이브러리 추가
+    implementation("com.google.code.gson:gson:2.8.8") // 최신 버전으로 변경 가능
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

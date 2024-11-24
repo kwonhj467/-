@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
@@ -8,6 +9,7 @@
         android:background="#F5F5F5">
 
         <ScrollView
+            android:id="@+id/night_view_scrollview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -31,6 +33,7 @@
 
                 <!-- 광교 호수 공원 프레임 -->
                 <LinearLayout
+                    android:id="@+id/frame_gwanggyo_lake_park"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
@@ -84,6 +87,7 @@
 
                 <!-- 방화수류정 프레임 -->
                 <LinearLayout
+                    android:id="@+id/frame_banghwasuryujeong"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
@@ -115,7 +119,7 @@
                         android:textSize="14sp" />
 
                     <Button
-                        android:id="@+id/favorite_button_gwanggyo_lake_park1"
+                        android:id="@+id/favorite_button_banghwasuryujeong"
                         android:layout_width="346dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -136,6 +140,7 @@
                 </LinearLayout>
                 <!-- 신대호수 프레임 -->
                 <LinearLayout
+                    android:id="@+id/frame_sindae_lake"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
@@ -189,6 +194,7 @@
 
                 <!-- 장안문 프레임 -->
                 <LinearLayout
+                    android:id="@+id/frame_janganmun"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
