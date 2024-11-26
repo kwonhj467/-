@@ -1,6 +1,7 @@
 package com.example.suwontravelapp
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -31,6 +32,10 @@ class HistoricSiteActivity : AppCompatActivity() {
             )
         }
 
+        binding.mapButtonHwasung.setOnClickListener {
+            showMap("https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6069.8652831005775!2d127.00887160642674!3d37.28587540793227!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5cca0fa82ebb%3A0x1326e46ba3ed1641!2z7IiY7JuQ7ZmU7ISx!5e0!3m2!1sko!2skr!4v1732524653710!5m2!1sko!2skr")
+        }
+
         binding.favoriteButtonGgHistPark.setOnClickListener {
             addFavorite(
                 FavoriteItem(
@@ -39,6 +44,11 @@ class HistoricSiteActivity : AppCompatActivity() {
                     R.drawable.gg_hist_museum
                 )
             )
+        }
+
+        binding.mapButtonGgHistPark.setOnClickListener {
+            // 올바른 수원 광교 박물관의 지도 URL로 수정
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6348.782001067949!2d127.05070061555366!3d37.296013569172396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5fa2a1d7a78b%3A0x4ec77537e42ab9f5!2z7JWE7J6Q7ZWZ7IucIOyGoeq1rOyEseyLnOyKpA!5e0!3m2!1sko!2skr!4v1732525820000!5m2!1sko!2skr")
         }
 
         binding.favoriteButtonHwaseongPalace.setOnClickListener {
@@ -51,6 +61,10 @@ class HistoricSiteActivity : AppCompatActivity() {
             )
         }
 
+        binding.mapButtonHwaseongPalace.setOnClickListener {
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.555309732625!2d127.01115207477176!3d37.28197084039631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b43340a137667%3A0x692f2601c8996039!2z7ZmU7ISx7ZaJ6raB!5e0!3m2!1sko!2skr!4v1732525047493!5m2!1sko!2skr")
+        }
+
         binding.favoriteButtonJanganGate.setOnClickListener {
             addFavorite(
                 FavoriteItem(
@@ -61,6 +75,10 @@ class HistoricSiteActivity : AppCompatActivity() {
             )
         }
 
+        binding.mapButtonJanganGate.setOnClickListener {
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6348.513042066294!2d127.01039946000371!3d37.28905378034501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5ccbebc74471%3A0x39d42fadbb7c62e3!2z7J6l7JWI66y4!5e0!3m2!1sko!2skr!4v1732605139600!5m2!1sko!2skr")
+        }
+
         binding.favoriteButtonYeonmudae.setOnClickListener {
             addFavorite(
                 FavoriteItem(
@@ -69,6 +87,10 @@ class HistoricSiteActivity : AppCompatActivity() {
                     R.drawable.yeonmudae
                 )
             )
+        }
+
+        binding.mapButtonYeonmudae.setOnClickListener {
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.307385631906!2d127.02109197532641!3d37.28784809006049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5cb6b12aa45d%3A0xe5b041181e12d943!2z7Jew66y064yAIOyjvOywqOyepQ!5e0!3m2!1sko!2skr!4v1732605266568!5m2!1sko!2skr")
         }
     }
 
@@ -92,5 +114,11 @@ class HistoricSiteActivity : AppCompatActivity() {
         sharedPreferences.edit().putString("favorites_list", updatedFavoritesString).apply()
 
         Toast.makeText(this, "${item.title} 즐겨찾기에 추가되었습니다.", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun showMap(url: String) {
+        val intent = Intent(this, MapViewActivity::class.java)
+        intent.putExtra("MAP_URL", url)
+        startActivity(intent)
     }
 }

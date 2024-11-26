@@ -1,6 +1,7 @@
 package com.example.suwontravelapp
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -20,7 +21,7 @@ class ActivityCategoryActivity : AppCompatActivity() {
         binding = ActivityActivityCategoryBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // 버튼 클릭 이벤트 설정
+        // 즐겨찾기 버튼 클릭 이벤트 설정
         binding.favoriteButtonTheFantasyum.setOnClickListener {
             addFavorite(
                 FavoriteItem(
@@ -60,6 +61,23 @@ class ActivityCategoryActivity : AppCompatActivity() {
                 )
             )
         }
+
+        // 지도 보기 버튼 클릭 이벤트 설정
+        binding.mapButtonTheFantasyum.setOnClickListener {
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5341.598090340044!2d127.05866494875579!3d37.24454639881454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b44eb51ecd5cd%3A0x623b97d5a8d5d143!2z642U7YyQ7YOA7KeA7JuA!5e0!3m2!1sko!2skr!4v1732606113826!5m2!1sko!2skr")
+        }
+
+        binding.mapButtonFlyingSuwon.setOnClickListener {
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.330615499737!2d127.02315367532643!3d37.28729744009185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5cb11c7e8091%3A0xe57324e46ddb4c0e!2z7ZSM65287J6J7IiY7JuQ!5e0!3m2!1sko!2skr!4v1732606170135!5m2!1sko!2skr")
+        }
+
+        binding.mapButtonKtwizPark.setOnClickListener {
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7548.60194744487!2d127.0050525995401!3d37.29996465187112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5db07ba6e26f%3A0xf8d00419ae70fbb8!2z7IiY7JuQS1TsnITspojtjIztgaw!5e0!3m2!1sko!2skr!4v1732606207747!5m2!1sko!2skr")
+        }
+
+        binding.mapButtonGravityClimbing.setOnClickListener {
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5060.764403012671!2d127.04039406728411!3d37.25803745608902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b457b0ded9783%3A0x5a3fe2d91549c843!2z6re4656Y67mE7Yuw7YG065287J2067CN!5e0!3m2!1sko!2skr!4v1732606250017!5m2!1sko!2skr")
+        }
     }
 
     private fun addFavorite(item: FavoriteItem) {
@@ -82,5 +100,11 @@ class ActivityCategoryActivity : AppCompatActivity() {
         sharedPreferences.edit().putString("favorites_list", updatedFavoritesString).apply()
 
         Toast.makeText(this, "${item.title} 즐겨찾기에 추가되었습니다.", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun showMap(url: String) {
+        val intent = Intent(this, MapViewActivity::class.java)
+        intent.putExtra("MAP_URL", url)
+        startActivity(intent)
     }
 }
