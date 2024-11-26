@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         binding.nightViewButton.setOnClickListener { openDetailActivity(NightViewActivity::class.java) }
         binding.historicSiteButton.setOnClickListener { openDetailActivity(HistoricSiteActivity::class.java) }
         binding.activityButton.setOnClickListener { openDetailActivity(ActivityCategoryActivity::class.java) }
-        binding.popularityButton.setOnClickListener { openDetailActivity(PopularityActivity::class.java) }
+        binding.favoriteButton.setOnClickListener { openDetailActivity(PopularityActivity::class.java) }
         binding.mapViewButton.setOnClickListener { openDetailActivity(MapViewActivity::class.java) }
     }
 

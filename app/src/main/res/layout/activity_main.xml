@@ -175,11 +175,11 @@
                     android:id="@+id/popularity_image"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/popularity"
-                    android:contentDescription="인기순위 이미지" />
+                    android:src="@drawable/favorite"
+                    android:contentDescription="즐겨찾기 이미지" />
 
                 <Button
-                    android:id="@+id/popularityButton"
+                    android:id="@+id/favoriteButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="즐겨찾기"

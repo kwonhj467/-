@@ -40,16 +40,16 @@ class DateCourseActivity : AppCompatActivity() {
         binding.favoriteButtonJyCoffeeRoastery.setOnClickListener {
             addFavorite(
                 FavoriteItem(
-                    "정지영 커피 로스터리",
+                    "정지영 커피 로스터즈",
                     "아름다운 인테리어와 맛있는 커피가 있는 인기 카페입니다.",
                     R.drawable.jy_coffee_roastery,
-                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.337913663371!2d127.00936297532631!3d37.28712444010172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5cca0fa82ebb%3A0x1326e46ba3ed1641!2z7IiY7JuQ7ZmU7ISx!5e0!3m2!1sko!2skr!4v1732614736299!5m2!1sko!2skr"
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.4335493362105!2d127.01182957491014!3d37.28485737211285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b439d53ddf9f7%3A0xab9c6cc358896cc9!2z7KCV7KeA7JiB7Luk7ZS866Gc7Iqk7YSw7KaIIO2Wieq2geuzuOygkA!5e0!3m2!1sko!2skr!4v1732618238485!5m2!1sko!2skr"
                 )
             )
         }
 
         binding.mapButtonJyCoffeeRoastery.setOnClickListener {
-            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.337913663371!2d127.00936297532631!3d37.28712444010172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5cca0fa82ebb%3A0x1326e46ba3ed1641!2z7IiY7JuQ7ZmU7ISx!5e0!3m2!1sko!2skr!4v1732614736299!5m2!1sko!2skr")
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.4335493362105!2d127.01182957491014!3d37.28485737211285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b439d53ddf9f7%3A0xab9c6cc358896cc9!2z7KCV7KeA7JiB7Luk7ZS866Gc7Iqk7YSw7KaIIO2Wieq2geuzuOygkA!5e0!3m2!1sko!2skr!4v1732618238485!5m2!1sko!2skr")
         }
 
         binding.favoriteButtonHaenggungMural.setOnClickListener {
