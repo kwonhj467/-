@@ -1,6 +1,7 @@
 package com.example.suwontravelapp
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
@@ -41,10 +42,9 @@ class PopularityActivity : AppCompatActivity() {
             descriptionTextView.text = item.description
             imageView.setImageResource(item.imageResId)
 
-            // 지도 보기 버튼 설정 (예제, 기능을 구현하세요)
+            // 지도 보기 버튼 클릭 이벤트 설정
             mapButton.setOnClickListener {
-                // 지도 보기 기능 구현
-                // 예시: startActivity(Intent(this, MapActivity::class.java))
+                showMap(item.mapUrl)
             }
 
             // 삭제 버튼 클릭 시 동작
@@ -61,5 +61,11 @@ class PopularityActivity : AppCompatActivity() {
 
             binding.favoritesListLayout.addView(favoriteView)
         }
+    }
+
+    private fun showMap(url: String) {
+        val intent = Intent(this, MapViewActivity::class.java)
+        intent.putExtra("MAP_URL", url)
+        startActivity(intent)
     }
 }

@@ -27,7 +27,8 @@ class ActivityCategoryActivity : AppCompatActivity() {
                 FavoriteItem(
                     "더 판타지움",
                     "환상적인 체험을 즐길 수 있는 테마파크입니다.",
-                    R.drawable.the_fantasyum
+                    R.drawable.the_fantasyum,
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5341.598090340044!2d127.05866494875579!3d37.24454639881454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b44eb51ecd5cd%3A0x623b97d5a8d5d143!2z642U7YyQ7YOA7KeA7JuA!5e0!3m2!1sko!2skr!4v1732606113826!5m2!1sko!2skr"
                 )
             )
         }
@@ -37,7 +38,8 @@ class ActivityCategoryActivity : AppCompatActivity() {
                 FavoriteItem(
                     "플라잉 수원",
                     "열기구를 타고 수원의 경치를 감상할 수 있는 곳입니다.",
-                    R.drawable.flying_suwon
+                    R.drawable.flying_suwon,
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.330615499737!2d127.02315367532643!3d37.28729744009185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5cb11c7e8091%3A0xe57324e46ddb4c0e!2z7ZSM65287J6J7IiY7JuQ!5e0!3m2!1sko!2skr!4v1732611440174!5m2!1sko!2skr"
                 )
             )
         }
@@ -47,8 +49,9 @@ class ActivityCategoryActivity : AppCompatActivity() {
                 FavoriteItem(
                     "수원 KT위즈파크 야구장",
                     "KT 위즈의 홈구장으로, 야구 경기를 즐길 수 있는 곳입니다.",
-                    R.drawable.ktwiz_park
-                )
+                    R.drawable.ktwiz_park,
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.8048142597077!2d127.00709357532689!3d37.29975953938153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5db07ba6e26f%3A0xf8d00419ae70fbb8!2z7IiY7JuQS1TsnITspojtjIztgaw!5e0!3m2!1sko!2skr!4v1732614534683!5m2!1sko!2skr")
+
             )
         }
 
@@ -57,7 +60,8 @@ class ActivityCategoryActivity : AppCompatActivity() {
                 FavoriteItem(
                     "그래비티 클라이밍",
                     "다양한 난이도의 클라이밍을 즐길 수 있는 실내 암벽장입니다.",
-                    R.drawable.gravity_climbing
+                    R.drawable.gravity_climbing,
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.5576373716335!2d127.04273337532487!3d37.25820174174939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b457b0ded9783%3A0x5a3fe2d91549c843!2z6re4656Y67mE7Yuw7YG065287J2067CN!5e0!3m2!1sko!2skr!4v1732614621683!5m2!1sko!2skr"
                 )
             )
         }
@@ -68,15 +72,15 @@ class ActivityCategoryActivity : AppCompatActivity() {
         }
 
         binding.mapButtonFlyingSuwon.setOnClickListener {
-            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.330615499737!2d127.02315367532643!3d37.28729744009185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5cb11c7e8091%3A0xe57324e46ddb4c0e!2z7ZSM65287J6J7IiY7JuQ!5e0!3m2!1sko!2skr!4v1732606170135!5m2!1sko!2skr")
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.330615499737!2d127.02315367532643!3d37.28729744009185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5cb11c7e8091%3A0xe57324e46ddb4c0e!2z7ZSM65287J6J7IiY7JuQ!5e0!3m2!1sko!2skr!4v1732611440174!5m2!1sko!2skr")
         }
 
         binding.mapButtonKtwizPark.setOnClickListener {
-            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7548.60194744487!2d127.0050525995401!3d37.29996465187112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5db07ba6e26f%3A0xf8d00419ae70fbb8!2z7IiY7JuQS1TsnITspojtjIztgaw!5e0!3m2!1sko!2skr!4v1732606207747!5m2!1sko!2skr")
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.8048142597077!2d127.00709357532689!3d37.29975953938153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5db07ba6e26f%3A0xf8d00419ae70fbb8!2z7IiY7JuQS1TsnITspojtjIztgaw!5e0!3m2!1sko!2skr!4v1732614534683!5m2!1sko!2skr")
         }
 
         binding.mapButtonGravityClimbing.setOnClickListener {
-            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5060.764403012671!2d127.04039406728411!3d37.25803745608902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b457b0ded9783%3A0x5a3fe2d91549c843!2z6re4656Y67mE7Yuw7YG065287J2067CN!5e0!3m2!1sko!2skr!4v1732606250017!5m2!1sko!2skr")
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.5576373716335!2d127.04273337532487!3d37.25820174174939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b457b0ded9783%3A0x5a3fe2d91549c843!2z6re4656Y67mE7Yuw7YG065287J2067CN!5e0!3m2!1sko!2skr!4v1732614621683!5m2!1sko!2skr")
         }
     }
 
