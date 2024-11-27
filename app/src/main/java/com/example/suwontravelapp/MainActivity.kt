@@ -5,14 +5,12 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.suwontravelapp.databinding.ActivityMainBinding
 import android.util.Log
-import android.widget.Button
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
-
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -22,7 +20,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        // ViewBinding 초기화
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         // FirebaseAuth 초기화
         auth = FirebaseAuth.getInstance()
@@ -35,19 +36,11 @@ class MainActivity : AppCompatActivity() {
         // GoogleSignInClient 초기화
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
-        // 로그인 버튼 이벤트
-        val login_Button: Button = findViewById(R.id.login_button)
-        login_Button.setOnClickListener {
+        // 로그인 버튼 이벤트 (ViewBinding을 사용하여 초기화)
+        binding.signInButton.setOnClickListener {
             signIn()
         }
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        binding.loginButton.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-        }
         // 각 카테고리 버튼 클릭 이벤트
         binding.dateCourseButton.setOnClickListener { openDetailActivity(DateCourseActivity::class.java) }
         binding.nightViewButton.setOnClickListener { openDetailActivity(NightViewActivity::class.java) }
@@ -61,10 +54,12 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, activityClass)
         startActivity(intent)
     }
+
     private fun signIn() {
         val signInIntent = googleSignInClient.signInIntent
         startActivityForResult(signInIntent, RC_SIGN_IN)
     }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -78,6 +73,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
     private fun firebaseAuthWithGoogle(account: GoogleSignInAccount?) {
         val credential = GoogleAuthProvider.getCredential(account?.idToken, null)
         auth.signInWithCredential(credential)
@@ -91,5 +87,4 @@ class MainActivity : AppCompatActivity() {
                 }
             }
     }
-
 }

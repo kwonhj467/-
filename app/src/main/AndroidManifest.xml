@@ -37,8 +37,6 @@
             </intent-filter>
         </activity>
 
-        <!-- LoginActivity 등록 추가 -->
-        <activity android:name=".LoginActivity" android:exported="true" />
 
         <!-- 각 카테고리의 새로운 액티비티 등록 -->
         <activity android:name=".DateCourseActivity" android:exported="true" />
