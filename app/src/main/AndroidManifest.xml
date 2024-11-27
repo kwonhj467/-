@@ -45,6 +45,8 @@
         <activity android:name=".ActivityCategoryActivity" android:exported="true" />
         <activity android:name=".PopularityActivity" android:exported="true" />
         <activity android:name=".MapViewActivity" android:exported="true" />
+        <activity android:name=".Map" />
+
 
     </application>
 
