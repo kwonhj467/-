@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">suwontravelapp</string>
+    <string name="default_web_client_id">831540774207-os54lhs0nq6euq3rhghoooir64lsfome.apps.googleusercontent.com</string>
+
 </resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "831540774207",
+    "project_id": "suwontravelapp",
+    "storage_bucket": "suwontravelapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831540774207:android:9cc4a77eab1fe9f7a5bf8a",
+        "android_client_info": {
+          "package_name": "com.example.suwontravelapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuxxrPL-wo9-uBGfct7KKXWUZ7n_0377I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

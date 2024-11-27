@@ -3,6 +3,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -49,10 +50,11 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-
-    // Gson 라이브러리 추가
+    implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
+    implementation("com.google.firebase:firebase-analytics") // Gson 라이브러리 추가
     implementation("com.google.code.gson:gson:2.8.8") // 최신 버전으로 변경 가능
-
+    implementation("com.google.android.gms:play-services-auth:20.7.0") // 최신 버전 확인
+    implementation("com.google.firebase:firebase-auth-ktx:21.1.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

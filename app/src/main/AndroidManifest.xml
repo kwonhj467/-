@@ -18,10 +18,19 @@
 
         <!-- MainActivity 설정 -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="true"
+            tools:replace="android:exported">
+            <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+            <meta-data
+                android:name="com.google.firebase.database.persistence.enabled"
+                android:value="true" />
+        </activity>
 
-            android:exported="true">
-
+        <!-- MainActivity에 대한 올바른 Intent-filter 설정 -->
+        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
