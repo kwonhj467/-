@@ -30,13 +30,13 @@
         </activity>
 
         <!-- MainActivity에 대한 올바른 Intent-filter 설정 -->
-        <activity android:name=".MainActivity" android:exported="true">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
         <!-- 각 카테고리의 새로운 액티비티 등록 -->
         <activity android:name=".DateCourseActivity" android:exported="true" />
