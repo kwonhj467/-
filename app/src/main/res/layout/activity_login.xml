@@ -5,15 +5,16 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background">
+        android:background="@drawable/startimage">
 
         <TextView
             android:id="@+id/titleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="수수한 여행"
-            android:textSize="32sp"
+            android:textSize="40sp"
             android:textStyle="bold"
+            android:textColor="#FFFFFF"
             android:layout_marginTop="32dp"
             android:layout_marginBottom="16dp"
             android:layout_gravity="center_horizontal"
@@ -24,21 +25,27 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical"
             tools:context=".LoginActivity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/titleText">
 
-            <Button
-                android:id="@+id/signInButton"
-                android:layout_width="215dp"
-                android:layout_height="62dp"
-                android:backgroundTint="#FF4081"
-                android:text="Google 로그인"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="215dp"
+            android:layout_height="62dp"
+            android:backgroundTint="#9370DB"
+            android:text="Google 로그인"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="627dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
