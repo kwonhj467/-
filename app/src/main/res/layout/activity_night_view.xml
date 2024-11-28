@@ -70,7 +70,7 @@
                         android:layout_width="346dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:backgroundTint="#FF4081"
+                        android:backgroundTint="#9370DB"
                         android:text="즐겨찾기 추가"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp" />
@@ -80,7 +80,7 @@
                         android:layout_width="346dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:backgroundTint="#FF4081"
+                        android:backgroundTint="#9370DB"
                         android:text="지도 보기"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp" />
@@ -124,7 +124,7 @@
                         android:layout_width="346dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:backgroundTint="#FF4081"
+                        android:backgroundTint="#9370DB"
                         android:text="즐겨찾기 추가"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp" />
@@ -134,7 +134,7 @@
                         android:layout_width="346dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:backgroundTint="#FF4081"
+                        android:backgroundTint="#9370DB"
                         android:text="지도 보기"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp" />
@@ -177,7 +177,7 @@
                         android:layout_width="346dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:backgroundTint="#FF4081"
+                        android:backgroundTint="#9370DB"
                         android:text="즐겨찾기 추가"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp" />
@@ -187,7 +187,7 @@
                         android:layout_width="346dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:backgroundTint="#FF4081"
+                        android:backgroundTint="#9370DB"
                         android:text="지도 보기"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp" />
@@ -231,7 +231,7 @@
                         android:layout_width="346dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:backgroundTint="#FF4081"
+                        android:backgroundTint="#9370DB"
                         android:text="즐겨찾기 추가"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp" />
@@ -241,7 +241,7 @@
                         android:layout_width="346dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:backgroundTint="#FF4081"
+                        android:backgroundTint="#9370DB"
                         android:text="지도 보기"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp" />

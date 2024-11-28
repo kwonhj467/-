@@ -36,6 +36,7 @@
                 android:layout_marginTop="16dp"
                 android:text="로그아웃"
                 android:textSize="18sp"
+                android:backgroundTint="#9370DB"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -66,7 +67,8 @@
                     android:layout_height="wrap_content"
                     android:text="데이트코스"
                     android:textSize="18sp"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#9370DB" />
             </LinearLayout>
 
             <!-- 야경 버튼 -->
@@ -96,7 +98,8 @@
                     android:layout_height="wrap_content"
                     android:text="야경"
                     android:textSize="18sp"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#9370DB" />
             </LinearLayout>
 
             <!-- 유적지 버튼 -->
@@ -126,7 +129,8 @@
                     android:layout_height="wrap_content"
                     android:text="유적지"
                     android:textSize="18sp"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#9370DB" />
             </LinearLayout>
 
             <!-- 액티비티 버튼 -->
@@ -156,7 +160,8 @@
                     android:layout_height="wrap_content"
                     android:text="액티비티"
                     android:textSize="18sp"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#9370DB" />
             </LinearLayout>
 
             <!-- 즐겨찾기 버튼 -->
@@ -186,7 +191,8 @@
                     android:layout_height="wrap_content"
                     android:text="즐겨찾기"
                     android:textSize="18sp"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#9370DB" />
             </LinearLayout>
 
             <!-- 지도 보기 버튼 -->
@@ -217,7 +223,8 @@
                     android:layout_height="wrap_content"
                     android:text="지도"
                     android:textSize="18sp"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#9370DB" />
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

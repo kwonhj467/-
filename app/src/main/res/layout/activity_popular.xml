@@ -27,13 +27,13 @@
                     android:textStyle="bold"
                     android:fontFamily="@font/font"/>
 
-            <!-- 동적으로 추가될 즐겨찾기 목록 -->
-            <LinearLayout
-                android:id="@+id/favoritesListLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingTop="16dp" />
+                <!-- 동적으로 추가될 즐겨찾기 목록 -->
+                <LinearLayout
+                    android:id="@+id/favoritesListLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp" />
 
             </LinearLayout>
         </ScrollView>
