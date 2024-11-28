@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         binding.historicSiteButton.setOnClickListener { openDetailActivity(HistoricSiteActivity::class.java) }
         binding.activityButton.setOnClickListener { openDetailActivity(ActivityCategoryActivity::class.java) }
         binding.favoriteButton.setOnClickListener { openDetailActivity(PopularityActivity::class.java) }
-        binding.mapViewButton.setOnClickListener { openDetailActivity(MapViewActivity::class.java) }
+        binding.mapViewButton.setOnClickListener { openDetailActivity(Map::class.java) }
     }
 
     private fun openDetailActivity(activityClass: Class<*>) {
