@@ -36,7 +36,7 @@
                 android:layout_marginTop="16dp"
                 android:text="로그아웃"
                 android:textSize="18sp"
-                android:backgroundTint="#9370DB"
+                android:backgroundTint="#FF4081"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
