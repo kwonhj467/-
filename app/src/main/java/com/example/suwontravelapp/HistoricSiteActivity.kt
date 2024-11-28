@@ -96,6 +96,36 @@ class HistoricSiteActivity : AppCompatActivity() {
         binding.mapButtonYeonmudae.setOnClickListener {
             showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.307385631906!2d127.02109197532641!3d37.28784809006049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5dc9433b8087%3A0xa8815121dd58ed35!2z7Jew66y064yAIOunpO2RnOyGjCAo7ZmU7ISx7Ja07LCoLCDqta3qtoHssrTtl5gp!5e0!3m2!1sko!2skr!4v1732615534972!5m2!1sko!2skr")
         }
+
+        binding.favoriteButtonJingakguksa.setOnClickListener {
+            addFavorite(
+                FavoriteItem(
+                    "창성사지 진각국사탑비",
+                    "고려시대 말기의 승려 진각국사를 추모하기 위하여 세운 부도탑비입니다.",
+                    R.drawable.jingakguksa,
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.3505701900767!2d127.0186800863434!3d37.28682442067559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5cb5c3b26649%3A0xe3a8a0dc4c1ab2b0!2z7LC97ISx7IKs7KeAIOynhOqwgeq1reyCrO2Dkeu5hA!5e0!3m2!1sko!2skr!4v1732795577806!5m2!1sko!2skr"
+                )
+            )
+        }
+
+        binding.mapButtonJingakguksa.setOnClickListener {
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.3505701900767!2d127.0186800863434!3d37.28682442067559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5cb5c3b26649%3A0xe3a8a0dc4c1ab2b0!2z7LC97ISx7IKs7KeAIOynhOqwgeq1reyCrO2Dkeu5hA!5e0!3m2!1sko!2skr!4v1732795577806!5m2!1sko!2skr")
+        }
+
+        binding.favoriteButtonHyanggyo.setOnClickListener {
+            addFavorite(
+                FavoriteItem(
+                    "수원향교",
+                    "조선시대 나라에서 토지와 노비·책 등을 지원받아 학생을 가르친 교육기관입니다.",
+                    R.drawable.hyanggyo,
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1869.7526879037127!2d127.01084568141012!3d37.272481719028825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b433bf213a96f%3A0xda28c3fd6846d973!2z7IiY7JuQ7Zal6rWQ!5e0!3m2!1sko!2skr!4v1732800819255!5m2!1sko!2skr"
+                )
+            )
+        }
+
+        binding.mapButtonHyanggyo.setOnClickListener {
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1869.7526879037127!2d127.01084568141012!3d37.272481719028825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b433bf213a96f%3A0xda28c3fd6846d973!2z7IiY7JuQ7Zal6rWQ!5e0!3m2!1sko!2skr!4v1732800819255!5m2!1sko!2skr")
+        }
     }
 
     private fun addFavorite(item: FavoriteItem) {

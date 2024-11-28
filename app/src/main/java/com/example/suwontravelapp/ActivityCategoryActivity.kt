@@ -65,6 +65,16 @@ class ActivityCategoryActivity : AppCompatActivity() {
                 )
             )
         }
+        binding.favoriteButtonAquaPlanet.setOnClickListener {
+            addFavorite(
+                FavoriteItem(
+                    "아쿠아플라넷 광교",
+                    "다양한 해양생물 관찰과 체험 프로그램을 즐길 수 있는 아쿠아리움입니다.",
+                    R.drawable.aquaplanet,
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.8440230218634!2d127.05586375296294!3d37.28410589863513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5bc2a0298c79%3A0x3f76abd4177010a0!2z7JWE7L-g7JWE7ZSM652864S3IOq0keq1kA!5e0!3m2!1sko!2skr!4v1732802574458!5m2!1sko!2skr"
+                )
+            )
+        }
 
         // 지도 보기 버튼 클릭 이벤트 설정
         binding.mapButtonTheFantasyum.setOnClickListener {
@@ -81,6 +91,10 @@ class ActivityCategoryActivity : AppCompatActivity() {
 
         binding.mapButtonGravityClimbing.setOnClickListener {
             showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.5576373716335!2d127.04273337532487!3d37.25820174174939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b457b0ded9783%3A0x5a3fe2d91549c843!2z6re4656Y67mE7Yuw7YG065287J2067CN!5e0!3m2!1sko!2skr!4v1732614621683!5m2!1sko!2skr")
+        }
+
+        binding.mapButtonAquaPlanet.setOnClickListener{
+            showMap("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.8440230218634!2d127.05586375296294!3d37.28410589863513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5bc2a0298c79%3A0x3f76abd4177010a0!2z7JWE7L-g7JWE7ZSM652864S3IOq0keq1kA!5e0!3m2!1sko!2skr!4v1732802574458!5m2!1sko!2skr")
         }
     }
 
