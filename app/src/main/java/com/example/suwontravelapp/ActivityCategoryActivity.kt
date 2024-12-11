@@ -43,7 +43,7 @@ class ActivityCategoryActivity : AppCompatActivity() {
                 )
             )
         }
-
+//ss
         binding.favoriteButtonKtwizPark.setOnClickListener {
             addFavorite(
                 FavoriteItem(
